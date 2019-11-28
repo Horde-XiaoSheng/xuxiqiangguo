@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>滚动</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .worm{
+        overflow: hidden;
+        /* margin-top: 200px; */
+        width: 1200px;
+        height: 165px;
+        background-color: darkgrey;
+        margin: 200px auto;      /*auto自动居中*/
+        padding-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+    ul{
+        list-style: none;    /*去掉小黑点*/
+        /* background-color: darkgrey; */
+        width: 3000px;
+    }
+    li{
+        float: left;    /*浮动*/
+        overflow: hidden;/*超出隐藏*/
+        width: 185px;
+        height: 126px;
+        margin-right: 10px;
+        border-radius: 5px;
+        transition: 0.5s cubic-bezier(.29,1.21, .55,1.52);
+    }
+    ul:hover li{
+        width: 109px;
+    }
+    ul li:hover{
+        width: 579px;
+    }
+    </style>
+</head>
+<body>
+    <div class="worm">
+        <ul>
+            <li><img src="./imm1.jpg" alt=""></li>
+            <li><img src="./imm2.jpg" alt=""></li>
+            <li><img src="./imm3.png" alt=""></li>
+            <li><img src="./imm4.jpg" alt=""></li>
+            <li><img src="./imm5.jpg" alt=""></li>
+            <li><img src="./imm6.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
